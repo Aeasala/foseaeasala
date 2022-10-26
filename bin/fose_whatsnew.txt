@@ -1,0 +1,99 @@
+1.3 beta 2
+  SUPPORTS ONLY Fallout 3 v1.7.3 and Fallout 3 v1.7.3 German nogore.
+    Other version no longer supported.
+    
+- internal GetActorValueName should be functional.
+
+1.3 beta 1
+  SUPPORTS ONLY Fallout 3 v1.7 and Fallout 3 v1.7 No Gore.
+    Other version no longer supported.
+    
+- merge NVSE Messaging Interface and NVSE Command Interface. Serialisation extended where needed.
+- merge NVSE CommandTable modifications. 
+    Make use of CommandTable.h macros in other source files, as some parameter got renamed (arg1 to scriptData).
+- function ported from NVSE:
+    SetUIStringEx to support formatted strings.
+
+- some found bug back ported.    
+- some things made identical. (Worked both way with NVSE 4.6 Beta 3).
+
+1.2 beta 3
+- remove spam from GetNumItems
+
+1.2 beta 2
+- support for 1.7.3 german nogore runtime
+- preliminary Get/SetHair/Eyes/HairLength
+- fix crash bug with form list add/remove
+
+1.2 beta 1
+- enabled plugin manager
+
+1.1 beta 9
+- support for 1.7.0.3
+
+1.1 beta 8
+- fose_loader properly handles when large address aware flag is set on fallout3.exe
+- support for 1.6.0.3
+
+1.1 beta 7
+- support for cs 1.5.0.19
+
+1.1 beta 6
+- support for 1.5.0.22
+
+1.1 beta 5
+- fix TileValue::SetUIFloat
+
+1.1 beta 4
+- support for 1.4.0.6 (alternate release)
+
+1.1 beta 3
+- support for 1.0.0.15
+
+1.1 beta 2
+- support for 1.4.0.6 (initial release)
+
+1.1 beta 1
+- fix label/goto crashes
+
+1.0
+- Official public release
+
+1.0 beta 5
+- remove compatibility for Fallout 1.0.0.15
+- add SetBaseItemValue, SetHealth
+- change version numbering scheme to 0.major.minor.beta
+- Add GetFOSEBeta returning beta portion of version
+- fix bugs in ListAddForm, RemoveScript, GetClipRounds, SetWeaponHandGrip, SetWeaponAttackAnimation
+- use more generic object parameter type in GetType, GetHealth, CompareNames,
+SetName, SetHealth, most list form functions, TempCloneForm, IsClonedForm,
+GetSourceModIndex, most Script functions, IsFormValid
+
+1.0 beta 4
+- add support for Fallout 1.1.0.35
+
+1.0 beta 3:
+- reference walking functions (GetFirstRef, GetNextRef, GetNumRefs)
+- basic UI functions (GetUIFloat, SetUIFloat, SetUIString)
+- bugfix for looping functions on Vista
+- GetGameLoaded,GetGameRestarted
+- form list replace functions
+- math fnctions
+- integer bit manipulation functions
+
+1.0 beta 2:
+- looping functions
+- mod info functions
+- game setting and ini functions
+- more weapon funcions
+- GetEquippedObject
+- Form List removal functions
+
+1.0 beta:
+- initial beta release
+- basic input functions
+- basic weapon and item functions
+- basic console debug functions
+- some console functions exposed for scripts
+- alternate injection method with (hopefully) higher compatibility
+- not for use in released mods!
