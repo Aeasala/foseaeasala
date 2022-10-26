@@ -3,14 +3,14 @@
 Options g_options;
 
 Options::Options()
-:m_launchCS(false)
-,m_setPriority(false)
-,m_priority(0)
-,m_crcOnly(false)
-,m_optionsOnly(false)
-,m_waitForClose(false)
-,m_verbose(false)
-,m_fpsLimit(0)
+	:m_launchCS(false)
+	, m_setPriority(false)
+	, m_priority(0)
+	, m_crcOnly(false)
+	, m_optionsOnly(false)
+	, m_waitForClose(false)
+	, m_verbose(false)
+	, m_fpsLimit(0)
 {
 	//
 }
