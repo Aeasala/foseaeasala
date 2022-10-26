@@ -1,4 +1,5 @@
 #pragma once
+#include <string>
 
 void DumpClass(void * theClassPtr, UInt32 nIntsToDump = 512);
 const char * GetObjectClassName(void * obj);

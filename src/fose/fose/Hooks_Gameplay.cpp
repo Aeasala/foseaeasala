@@ -39,7 +39,16 @@ bool RunCommand_NS(COMMAND_ARGS, Cmd_Execute cmd)
 
 	static const UInt32 kExitGameFromMenuPatchAddr       = 0x0067B19B;
 #else
-#error
+	static const UInt32 kMainMenuFromIngameMenuPatchAddr = 0xFFFFFFFF;	// 4th reference to g_osGlobals after RaceSexMenu_func0008
+	static const UInt32 kMainMenuFromIngameMenuRetnAddr = 0xFFFFFFFF;	// original call
+
+	static const UInt32 kExitGameViaQQQPatchAddr = 0xFFFFFFFF;	// Inside Cmd_QuitGame_Execute, call ConsolePrintF
+	static const UInt32 kExitGameViaQQQRetnAddr = 0xFFFFFFFF;	// original call
+
+	static const UInt32 kExitGameFromMenuPatchAddr = 0xFFFFFFFF;
+
+//#error //throw an error otherwise, disabled
+
 #endif
 
 static enum QuitGameMessage
