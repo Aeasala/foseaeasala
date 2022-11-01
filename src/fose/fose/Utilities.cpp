@@ -220,6 +220,7 @@ static const std::string & GetFOSEConfigPath(void)
 	if(s_configPath.empty())
 	{
 		std::string	falloutPath = GetFalloutDirectory();
+
 		if(!falloutPath.empty())
 		{
 			s_configPath = falloutPath + "Data\\FOSE\\fose_config.ini";

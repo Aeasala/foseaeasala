@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="internals">
+      <UniqueIdentifier>{11e75a87-4b17-4f96-a2a1-8e7db70d5bfd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hooks">
+      <UniqueIdentifier>{883bdd84-d083-490f-81f0-35c11c60fb07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="plugin_api">
+      <UniqueIdentifier>{7638706d-8f5d-47cd-afea-54c466875f31}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\fose\CommandTable.cpp">
+      <Filter>internals</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fose\Utilities.cpp">
+      <Filter>internals</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fose\Hooks_Script.cpp">
+      <Filter>hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fose\PluginManager.cpp">
+      <Filter>plugin_api</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.c" />
+    <ClCompile Include="fose_editor.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\fose\CommandTable.h">
+      <Filter>internals</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fose\ParamInfos.h">
+      <Filter>internals</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fose\Utilities.h">
+      <Filter>internals</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fose\Hooks_Script.h">
+      <Filter>hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fose\PluginAPI.h">
+      <Filter>plugin_api</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fose\PluginManager.h">
+      <Filter>plugin_api</Filter>
+    </ClInclude>
+    <ClInclude Include="fose_editor.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\fose_common\fose_version.rc" />
+  </ItemGroup>
+</Project>

@@ -354,6 +354,8 @@ struct HookSetup
 
 	HookSetup()
 	{
+		m_data;
+
 		m_proc = NULL;
 		m_base = 0;
 		m_loadLib = 0;
