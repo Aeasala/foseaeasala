@@ -223,7 +223,7 @@ inline bool FloatEqual(float a, float b) { float magnitude = a - b; if(magnitude
 class Vector2
 {
 	public:
-		Vector2() { }
+		Vector2()                                   { x = 0; y = 0; }
 		Vector2(const Vector2 & in)					{ x = in.x; y = in.y; }
 		Vector2(float inX, float inY)				{ x = inX; y = inY; }
 		~Vector2() { }
@@ -289,7 +289,7 @@ inline bool MaskCompare(void * lhs, void * rhs, void * mask, UInt32 size)
 class Vector3
 {
 public:
-	Vector3()									{ }
+	Vector3()                                   { x = 0; y = 0; z = 0; }
 	Vector3(const Vector3 & in)					{ x = in.x; y = in.y; z = in.z; }
 	Vector3(float inX, float inY, float inZ)	{ x = inX; y = inY; z = inZ; }
 	~Vector3()									{ }

@@ -26,6 +26,7 @@
     <SccLocalPath>..</SccLocalPath>
     <SccProvider>MSSCCI:Perforce SCM</SccProvider>
     <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release 1.5.0.19|Win32'" Label="Configuration">
@@ -70,9 +71,10 @@
     <_ProjectFileVersion>17.0.32819.101</_ProjectFileVersion>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <OutDir>$(SolutionDir)\bin\$(Configuration)\</OutDir>
     <IntDir>$(Configuration)\</IntDir>
     <LinkIncremental>true</LinkIncremental>
+    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
@@ -103,7 +105,7 @@
       <ForcedIncludeFiles>fose_common/fose_prefix.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
     </ClCompile>
     <Link>
-      <OutputFile>$(SolutionDir)\bin\$(Configuration)\fose_editor_1_1.dll</OutputFile>
+      <OutputFile>$(SolutionDir)\bin\$(Configuration)\fose_editor.dll</OutputFile>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>
       <TargetMachine>MachineX86</TargetMachine>

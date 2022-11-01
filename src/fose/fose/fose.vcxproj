@@ -224,6 +224,8 @@
     <IntDir>$(Configuration)\</IntDir>
     <LinkIncremental>true</LinkIncremental>
     <OutDir>$(SolutionDir)\bin\$(Configuration)\</OutDir>
+    <TargetName>$(ProjectName)</TargetName>
+    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
@@ -314,7 +316,7 @@
       <ForcedIncludeFiles>fose_common/fose_prefix.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
     </ClCompile>
     <Link>
-      <OutputFile>$(SolutionDir)\bin\$(Configuration)\fose_1_1.dll</OutputFile>
+      <OutputFile>$(SolutionDir)\bin\$(Configuration)\fose.dll</OutputFile>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>
       <TargetMachine>MachineX86</TargetMachine>
